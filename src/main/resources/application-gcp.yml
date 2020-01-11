@@ -1,0 +1,8 @@
+spring:
+    cloud:
+        gcp:
+            sql:
+                enabled: true
+                database-type: mysql
+                database-name: marketplace
+                instance-connection-name: qwiklabs-gcp-00-8420f466804f:us-central1:mysql-db-container 
