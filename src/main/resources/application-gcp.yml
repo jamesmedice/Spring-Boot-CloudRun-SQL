@@ -5,4 +5,4 @@ spring:
                 enabled: true
                 database-type: mysql
                 database-name: marketplace
-                instance-connection-name: qwiklabs-gcp-00-8420f466804f:us-central1:mysql-db-container 
+                instance-connection-name: qwiklabs-gcp-d30f23cf0764a75f:us-central1:mysql-db-container 
