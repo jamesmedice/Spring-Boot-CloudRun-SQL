@@ -3,7 +3,15 @@
 spring:
     profiles:
         active: gcp,mysql
+    datasource:
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://google/marketplace?cloudSqlInstance=qwiklabs-gcp-d30f23cf0764a75f:us-central1:mysql-db-container&socketFactory=com.google.cloud.sql.mysql.SocketFactory
+        password: ${SECRETS_PASSWORD:tpm1234}
+        username: ${SECRETS_USER:root}
+        initialization-mode: always
+        schema: classpath:/schema.sql
     jpa:
+        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
         generate-ddl: true
         hibernate.ddl-auto: update
         show-sql: true
