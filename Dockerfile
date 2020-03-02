@@ -1,3 +1,4 @@
+### [Author] @Tiago Medice@  ###
 FROM maven:3.5.2-jdk-8-alpine as BUILD
 COPY pom.xml /app/
 COPY src /app/src/
