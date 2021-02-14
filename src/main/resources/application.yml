@@ -5,9 +5,9 @@ spring:
         active: gcp,mysql
     datasource:
         driverClassName: com.mysql.jdbc.Driver
-        url: jdbc:mysql://google/marketplace?cloudSqlInstance=qwiklabs-gcp-00-8389f14457c7:us-central1:marketplace&socketFactory=com.google.cloud.sql.mysql.SocketFactory
-        password: ${SECRETS_PASSWORD:tpm1234}
-        username: ${SECRETS_USER:root}
+        url: jdbc:mysql://${database_name}/?cloudSqlInstance=${instance_connection_name}&socketFactory=com.google.cloud.sql.mysql.SocketFactory
+        password: ${db_password:tpm1234}
+        username: ${db_username:root}
         initialization-mode: always
         schema: classpath:/schema.sql
     jpa:

@@ -1,0 +1,38 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sector
+  labels:
+    app: sector
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sector
+  template:
+    metadata:
+      labels:
+        app: sector
+    spec:
+      containers:
+      - name: sector
+        image: gcr.io/qwiklabs-gcp-04-098fb448995a/sector:latest
+        imagePullPolicy: IfNotPresent
+        envFrom:
+        - configMapRef:
+            name: cloudsql
+        env:
+          - name: db_username
+            valueFrom:
+              secretKeyRef:
+                name: credentials
+                key: username
+          - name: db_password
+            valueFrom:
+              secretKeyRef:
+                name: credentials
+                key: password
+        ports:
+        - containerPort: 8080
+---

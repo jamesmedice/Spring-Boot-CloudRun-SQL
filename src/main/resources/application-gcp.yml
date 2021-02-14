@@ -4,5 +4,5 @@ spring:
             sql:
                 enabled: true
                 database-type: mysql
-                database-name: marketplace
-                instance-connection-name: qwiklabs-gcp-00-8389f14457c7:us-central1:marketplace 
+                database-name: ${database_name}
+                instance-connection-name: ${instance_connection_name} 
