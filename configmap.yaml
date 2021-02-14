@@ -4,9 +4,8 @@ metadata:
   name: cloudsql
 data:
   instance_connection_name: qwiklabs-gcp-04-098fb448995a:us-central1:marketplace
-  profile: staging
   project_id: qwiklabs-gcp-04-098fb448995a
-  database_name: pmp
+  database_name: professionalmarketplace
   rds_hostname: "10.16.48.3"
-  rds_db_name: pmp
   rds_port: "3306"
+  profile: staging

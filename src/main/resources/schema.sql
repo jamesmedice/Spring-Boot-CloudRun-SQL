@@ -1,6 +1,6 @@
-create database IF NOT EXISTS marketplace;
+create database IF NOT EXISTS professionalmarketplace;
 
-USE marketplace;
+USE professionalmarketplace;
 
 		
 CREATE TABLE IF NOT EXISTS company (
