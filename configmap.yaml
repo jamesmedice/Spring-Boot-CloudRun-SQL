@@ -3,8 +3,8 @@ kind: ConfigMap
 metadata:
   name: cloudsql
 data:
-  instance_connection_name: qwiklabs-gcp-04-098fb448995a:us-central1:marketplace
-  project_id: qwiklabs-gcp-04-098fb448995a
+  instance_connection_name: qwiklabs-gcp-00-52208b17714d:us-central1:marketplace
+  project_id: qwiklabs-gcp-00-52208b17714d
   database_name: professionalmarketplace
   rds_hostname: "10.16.48.3"
   rds_port: "3306"

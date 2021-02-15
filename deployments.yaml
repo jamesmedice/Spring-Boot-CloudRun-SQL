@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: sector
-        image: gcr.io/qwiklabs-gcp-04-098fb448995a/sector:latest
+        image: gcr.io/qwiklabs-gcp-00-52208b17714d/sector:latest
         imagePullPolicy: IfNotPresent
         envFrom:
         - configMapRef:
